@@ -8,7 +8,7 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="120dp">
+        android:layout_height="140dp">
         <LinearLayout
             android:background="#004D40"
             android:layout_width="10dp"
@@ -24,6 +24,14 @@
             <TextView
                 android:textStyle="bold"
                 android:textColor="#ffffff"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="구매자를 기다리고 있습니다"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="#bdbdbd"
                 android:paddingLeft="10dp"
                 android:gravity="center_vertical"
                 android:text="SELLER : 물품이 거래 장소로 이동 중"
