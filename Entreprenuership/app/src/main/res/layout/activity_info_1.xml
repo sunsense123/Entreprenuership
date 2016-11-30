@@ -36,13 +36,27 @@
         android:textStyle="bold"
         />
 
+    <Button
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#004D40"
+        android:id="@+id/btn_next_1"
+        android:text="@string/next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
     <LinearLayout
         android:id="@+id/layout_1"
-        android:layout_centerVertical="true"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
         <LinearLayout
             android:layout_gravity="center_horizontal"
             android:background="@drawable/layout_circular"
@@ -109,17 +123,5 @@
                 android:layout_height="50dp" />
         </LinearLayout>
     </LinearLayout>
-
-    <Button
-        android:textSize="15dp"
-        android:textColor="#ffffff"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#004D40"
-        android:id="@+id/btn_next_1"
-        android:text="@string/next"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

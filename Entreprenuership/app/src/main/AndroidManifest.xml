@@ -20,6 +20,9 @@
         </activity>
         <activity android:name=".FinalActivity"></activity>
         <activity android:name=".ThirdActivity"></activity>
+        <activity android:name=".DemoActivity"></activity>
+
+
         <!-- [START firebase_service] -->
         <service
             android:name=".MyFirebaseMessagingService">

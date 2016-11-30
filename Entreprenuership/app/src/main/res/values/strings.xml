@@ -9,6 +9,7 @@
     <string name="edt_4">거래 위치(HUB)</string>
     <string name="edt_5">수취 계좌</string>
     <string name="next">다음</string>
+    <string name="register">등록하기</string>
     <string name="notice_1">거래 정보 입력</string>
     <string name="etc">거래 정보를 입력해주세요.</string>
 </resources>

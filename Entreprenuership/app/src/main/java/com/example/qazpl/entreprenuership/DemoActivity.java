@@ -1,64 +1,64 @@
 package com.example.qazpl.entreprenuership;
 
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-
-import com.google.firebase.iid.FirebaseInstanceId;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 
-public class ThirdActivity extends AppCompatActivity {
-    String name;
-    String phone;
-    String price;
-    String place;
-    String bank;
-    String bank_name;
-    EditText edt1;
-    EditText edt2;
-    String token;
+public class DemoActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info_2);
-        token = FirebaseInstanceId.getInstance().getToken();
+        setContentView(R.layout.activity_demo);
 
-        edt1 = (EditText) findViewById(R.id.edt_bank);
-        edt2 = (EditText) findViewById(R.id.edt_bank_name);
-        Intent ForGet = getIntent();
-        name = ForGet.getStringExtra("name");
-        phone = ForGet.getStringExtra("phone");
-        price = ForGet.getStringExtra("price");
-        place = ForGet.getStringExtra("place");
-
-        Button btn1 = (Button) findViewById(R.id.btn_next_2);
+        Button btn1 = (Button) findViewById(R.id.btn1);
+        Button btn2 = (Button) findViewById(R.id.btn2);
+        Button btn3 = (Button) findViewById(R.id.btn3);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(DemoActivity.this, "Processing : IN", Toast.LENGTH_LONG).show();
+                new HttpPostRequest().execute("3", "01029994263");
+            }
+        });
 
-
-                new HttpPostRequest().execute("1", phone, name, price, token);
-
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DemoActivity.this, "Processing : DEPOSIT", Toast.LENGTH_LONG).show();
+                new HttpPostRequest().execute("4", "01029994263");
 
             }
         });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DemoActivity.this, "Processing : OUT", Toast.LENGTH_LONG).show();
+                new HttpPostRequest().execute("5", "01029994263");
+
+            }
+        });
+
+
     }
 
-    private class HttpPostRequest extends AsyncTask<String, Void, String> {
-
+    public class HttpPostRequest extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... info) {
             String sResult = "Error";
@@ -68,11 +68,8 @@ public class ThirdActivity extends AppCompatActivity {
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 
                 conn.setRequestMethod("POST");
-                String body = "op=" + info[0] +"&"
-                        +"phone=" + info[1] + "&"
-                        +"product=" + info[2] + "&"
-                        +"price=" + info[3] + "&"
-                        +"token=" + info[4];
+                String body = "op=" + info[0] + "&"
+                        + "phone=" + info[1];
 
                 OutputStreamWriter osw = new OutputStreamWriter(conn.getOutputStream());
                 osw.write(body);
@@ -86,25 +83,22 @@ public class ThirdActivity extends AppCompatActivity {
                 while ((str = reader.readLine()) != null) {
                     builder.append(str);
                 }
-                sResult     = builder.toString();
+                sResult = builder.toString();
                 Log.e("CHECK", sResult);
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
             }
             return sResult;
+
         }
+
 
         @Override
-        protected void onPostExecute(String result){
+        protected void onPostExecute(String result) {
+            Log.e("RESULT", result);
 
-            Intent intent = new Intent(ThirdActivity.this,FinalActivity.class);
-      //    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-            overridePendingTransition(R.anim.in_from_right,R.anim.out_to_left);
-            finish();
+
         }
-    }
 
+    }
 }

@@ -100,4 +100,13 @@
         android:layout_width="30dp"
         android:layout_height="30dp" />
 
+    <TextView
+        android:id="@+id/btn_demo"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:background="#00897B"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+
 </RelativeLayout>
