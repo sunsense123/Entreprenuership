@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Entreprenuership</string>
+    <string name="main_log">친절한 안전 거래 도우미</string>
+    <string name="create_deal">새로 거래 등록하기</string>
+    <string name="search_partner">파트너 ID 검색</string>
+    <string name="edt_1">물품명</string>
+    <string name="edt_2">휴대폰 연락처('-'빼고 입력바랍니다.)</string>
+    <string name="edt_3">거래 가격</string>
+    <string name="edt_4">거래 위치(HUB)</string>
+    <string name="next">다음</string>
+    <string name="notice_1">거래 정보 입력</string>
+    <string name="etc">거래에 관한 정보를 입력해주세요.</string>
 </resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#00897B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:background="#004D40"
+            android:layout_width="10dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:background="#00796B"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="SELLER : 물품이 거래 장소로 이동 중"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="#bdbdbd"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="BUYER : 입금 대기 중"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="#bdbdbd"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="BUYER : 물품을 찾아가길 기다리는 중"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textColor="#bdbdbd"
+                android:paddingLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="거래 종료!"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:background="@drawable/layout_circular"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#1DE9B6"
+                    android:text="제품명"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#1DE9B6"
+                    android:text="연락처"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#1DE9B6"
+                    android:text="가   격"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#1DE9B6"
+                    android:text="위   치"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:text="----------------------------------------------"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:text="----------------------------------------------"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:text="----------------------------------------------"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:text="----------------------------------------------"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:textColor="#ffffff"
+        android:paddingBottom="2dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="입금용 계좌번호 입니다."/>
+
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="15dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/layout_circular"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#1DE9B6"
+                    android:text="계좌번호"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:text="----------------------------------------------"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:textColor="#ffffff"
+        android:paddingBottom="2dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HUB용 1회성 비밀 번호 입니다."/>
+    <LinearLayout
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="3dp"
+        android:paddingLeft="15dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/layout_circular"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#1DE9B6"
+                    android:text="비밀번호"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:text="----------------------------------------------"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

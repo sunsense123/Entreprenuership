@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         String token = FirebaseInstanceId.getInstance().getToken();
         Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
         Log.d("Firebase","Token: "+token);
-        Button btn1 = (Button) findViewById(R.id.btn1);
+        Button btn1 = (Button) findViewById(R.id.btn_create);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
