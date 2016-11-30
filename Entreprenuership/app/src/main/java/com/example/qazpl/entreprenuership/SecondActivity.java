@@ -20,6 +20,7 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mintent = new Intent(SecondActivity.this, ThirdActivity.class);
                 startActivity(mintent);
+                overridePendingTransition(R.anim.in_from_right,R.anim.out_to_left);
             }
         });
     }

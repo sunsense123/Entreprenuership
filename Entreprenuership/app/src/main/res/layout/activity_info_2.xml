@@ -65,7 +65,7 @@
             android:layout_height="wrap_content">
             <EditText
                 android:background="@null"
-                android:id="@+id/edt_bank"
+                android:id="@+id/edt_bank_name"
                 android:hint="은행명"
                 android:gravity="center"
                 android:textSize="15dp"
@@ -82,7 +82,7 @@
         android:layout_height="60dp"
         android:background="#004D40"
         android:id="@+id/btn_next_2"
-        android:text="@string/next"
+        android:text ="@string/register"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
