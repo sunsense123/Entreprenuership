@@ -34,7 +34,7 @@ public class FinalActivity extends AppCompatActivity {
         password = (TextView) findViewById(R.id.password);
         if(person.equals("buyer")) flag = true;
         if(flag){
-            status_0.setTextColor(Color.parseColor("#bdbdbd"));
+            status_0.setTextColor(Color.parseColor("#bdbdbd")); status_0.setTypeface(null, Typeface.NORMAL);
             status_1.setTextColor(Color.parseColor("#ffffff"));
             status_1.setTypeface(null, Typeface.BOLD);
             status_2.setTextColor(Color.parseColor("#bdbdbd"));
@@ -67,7 +67,7 @@ public class FinalActivity extends AppCompatActivity {
                     status_4.setTextColor(Color.parseColor("#bdbdbd"));
                     break;
                 case 1 :
-                    status_0.setTextColor(Color.parseColor("#bdbdbd"));
+                    status_0.setTextColor(Color.parseColor("#bdbdbd")); status_0.setTypeface(null, Typeface.NORMAL);
                     status_1.setTextColor(Color.parseColor("#ffffff"));
                     status_1.setTypeface(null, Typeface.BOLD);
                     status_2.setTextColor(Color.parseColor("#bdbdbd"));
@@ -76,7 +76,7 @@ public class FinalActivity extends AppCompatActivity {
                     break;
                 case 2 :
                     status_0.setTextColor(Color.parseColor("#bdbdbd"));
-                    status_1.setTextColor(Color.parseColor("#bdbdbd"));
+                    status_1.setTextColor(Color.parseColor("#bdbdbd")); status_1.setTypeface(null, Typeface.NORMAL);
                     status_2.setTextColor(Color.parseColor("#ffffff"));
                     status_2.setTypeface(null, Typeface.BOLD);
                     status_3.setTextColor(Color.parseColor("#bdbdbd"));
@@ -85,7 +85,7 @@ public class FinalActivity extends AppCompatActivity {
                 case 3 :
                     status_0.setTextColor(Color.parseColor("#bdbdbd"));
                     status_1.setTextColor(Color.parseColor("#bdbdbd"));
-                    status_2.setTextColor(Color.parseColor("#bdbdbd"));
+                    status_2.setTextColor(Color.parseColor("#bdbdbd")); status_2.setTypeface(null, Typeface.NORMAL);
                     status_3.setTextColor(Color.parseColor("#ffffff"));
                     status_3.setTypeface(null, Typeface.BOLD);
                     status_4.setTextColor(Color.parseColor("#bdbdbd"));
@@ -95,7 +95,7 @@ public class FinalActivity extends AppCompatActivity {
                     status_0.setTextColor(Color.parseColor("#bdbdbd"));
                     status_1.setTextColor(Color.parseColor("#bdbdbd"));
                     status_2.setTextColor(Color.parseColor("#bdbdbd"));
-                    status_3.setTextColor(Color.parseColor("#bdbdbd"));
+                    status_3.setTextColor(Color.parseColor("#bdbdbd")); status_3.setTypeface(null, Typeface.NORMAL);
                     status_4.setTextColor(Color.parseColor("#ffffff"));
                     status_4.setTypeface(null, Typeface.BOLD);
                     break;
