@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
+                android:id="@+id/status_0"
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:paddingLeft="10dp"
@@ -31,6 +32,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <TextView
+                android:id="@+id/status_1"
                 android:textColor="#bdbdbd"
                 android:paddingLeft="10dp"
                 android:gravity="center_vertical"
@@ -39,6 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <TextView
+                android:id="@+id/status_2"
                 android:textColor="#bdbdbd"
                 android:paddingLeft="10dp"
                 android:gravity="center_vertical"
@@ -47,6 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <TextView
+                android:id="@+id/status_3"
                 android:textColor="#bdbdbd"
                 android:paddingLeft="10dp"
                 android:gravity="center_vertical"
@@ -55,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
             <TextView
+                android:id="@+id/status_4"
                 android:textColor="#bdbdbd"
                 android:paddingLeft="10dp"
                 android:gravity="center_vertical"
