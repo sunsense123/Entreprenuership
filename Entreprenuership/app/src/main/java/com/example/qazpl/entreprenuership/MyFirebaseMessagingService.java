@@ -44,19 +44,27 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
-            Log.d(TAG, "Message data payload: " + remoteMessage.getData());
+            Log.d(TAG, "Message data payload: " + remoteMessage.getData().get("progress"));
+            updateStatus(getApplicationContext(),Integer.parseInt(remoteMessage.getData().get("progress")));
+
         }
 
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
         }
-
+        //updateStatus(getApplicationContext(),remoteMessage.getData());
         // Also if you intend on generating your own notifications as a result of a received FCM
         // message, here is where that should be initiated. See sendNotification method below.
     }
     // [END receive_message]
 
+    private void updateStatus(Context context, int status){
+        // status is from 0 to 4: 5 steps
+        Intent intent = new Intent("status");
+        intent.putExtra("statusID",status);
+        context.sendBroadcast(intent);
+    }
     /**
      * Create and show a simple notification containing the received FCM message.
      *
