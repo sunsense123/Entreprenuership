@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -34,6 +36,7 @@ public class FinalActivity extends AppCompatActivity {
         if(flag){
             status_0.setTextColor(Color.parseColor("#bdbdbd"));
             status_1.setTextColor(Color.parseColor("#ffffff"));
+            status_1.setTypeface(null, Typeface.BOLD);
             status_2.setTextColor(Color.parseColor("#bdbdbd"));
             status_3.setTextColor(Color.parseColor("#bdbdbd"));
             status_4.setTextColor(Color.parseColor("#bdbdbd"));
@@ -57,6 +60,7 @@ public class FinalActivity extends AppCompatActivity {
             switch (status) {
                 case 0 :
                     status_0.setTextColor(Color.parseColor("#ffffff"));
+                    status_0.setTypeface(null, Typeface.BOLD);
                     status_1.setTextColor(Color.parseColor("#bdbdbd"));
                     status_2.setTextColor(Color.parseColor("#bdbdbd"));
                     status_3.setTextColor(Color.parseColor("#bdbdbd"));
@@ -65,6 +69,7 @@ public class FinalActivity extends AppCompatActivity {
                 case 1 :
                     status_0.setTextColor(Color.parseColor("#bdbdbd"));
                     status_1.setTextColor(Color.parseColor("#ffffff"));
+                    status_1.setTypeface(null, Typeface.BOLD);
                     status_2.setTextColor(Color.parseColor("#bdbdbd"));
                     status_3.setTextColor(Color.parseColor("#bdbdbd"));
                     status_4.setTextColor(Color.parseColor("#bdbdbd"));
@@ -73,6 +78,7 @@ public class FinalActivity extends AppCompatActivity {
                     status_0.setTextColor(Color.parseColor("#bdbdbd"));
                     status_1.setTextColor(Color.parseColor("#bdbdbd"));
                     status_2.setTextColor(Color.parseColor("#ffffff"));
+                    status_2.setTypeface(null, Typeface.BOLD);
                     status_3.setTextColor(Color.parseColor("#bdbdbd"));
                     status_4.setTextColor(Color.parseColor("#bdbdbd"));
                     break;
@@ -81,6 +87,7 @@ public class FinalActivity extends AppCompatActivity {
                     status_1.setTextColor(Color.parseColor("#bdbdbd"));
                     status_2.setTextColor(Color.parseColor("#bdbdbd"));
                     status_3.setTextColor(Color.parseColor("#ffffff"));
+                    status_3.setTypeface(null, Typeface.BOLD);
                     status_4.setTextColor(Color.parseColor("#bdbdbd"));
                     if(flag) password.setText("AxK12Uz");
                     break;
@@ -90,6 +97,7 @@ public class FinalActivity extends AppCompatActivity {
                     status_2.setTextColor(Color.parseColor("#bdbdbd"));
                     status_3.setTextColor(Color.parseColor("#bdbdbd"));
                     status_4.setTextColor(Color.parseColor("#ffffff"));
+                    status_4.setTypeface(null, Typeface.BOLD);
                     break;
             }
         }
