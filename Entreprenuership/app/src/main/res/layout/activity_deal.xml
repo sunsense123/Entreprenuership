@@ -131,30 +131,34 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
+                        android:id="@+id/product"
                         android:textStyle="normal"
                         android:textColor="#ffffff"
-                        android:text="----------------------------------------------"
+                        android:text="Book"
                         android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                     <TextView
+                        android:id="@+id/phone_num"
                         android:textStyle="normal"
                         android:textColor="#ffffff"
-                        android:text="----------------------------------------------"
+                        android:text="010-2999-4263"
                         android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                     <TextView
+                        android:id="@+id/price"
                         android:textStyle="normal"
                         android:textColor="#ffffff"
-                        android:text="----------------------------------------------"
+                        android:text="10,000원"
                         android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" />
                     <TextView
+                        android:id="@+id/location"
                         android:textStyle="normal"
                         android:textColor="#ffffff"
                         android:text="UNIST"
@@ -211,9 +215,10 @@
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:id="@+id/account"
                         android:textStyle="normal"
                         android:textColor="#ffffff"
-                        android:text="경남 540-21-8282828"
+                        android:text="----------------------------------------------"
                         android:gravity="center_vertical"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
@@ -267,6 +272,7 @@
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:id="@+id/password"
                         android:textStyle="normal"
                         android:textColor="#ffffff"
                         android:text="----------------------------------------------"

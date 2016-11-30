@@ -65,6 +65,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         intent.putExtra("statusID",status);
         context.sendBroadcast(intent);
     }
+    /*private void GeneratePW(Context context, String pw){
+        Intent intent = new Intent("pw");
+        intent.putExtra("passwd",pw);
+        context.sendBroadcast(intent);
+    }*/
     /**
      * Create and show a simple notification containing the received FCM message.
      *

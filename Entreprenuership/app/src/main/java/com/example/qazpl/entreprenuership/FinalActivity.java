@@ -12,12 +12,33 @@ import android.widget.TextView;
 
 public class FinalActivity extends AppCompatActivity {
     Context mContext;
-
+    Intent intent;
+    TextView account;
+    TextView password;
+    Boolean flag=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deal);
         mContext = this;
+        intent=getIntent();
+        String person = intent.getStringExtra("person");
+        TextView status_0 = (TextView) findViewById(R.id.status_0);
+        TextView status_1 = (TextView) findViewById(R.id.status_1);
+        TextView status_2 = (TextView) findViewById(R.id.status_2);
+        TextView status_3 = (TextView) findViewById(R.id.status_3);
+        TextView status_4 = (TextView) findViewById(R.id.status_4);
+        account = (TextView) findViewById(R.id.account);
+        password = (TextView) findViewById(R.id.password);
+        if(person.equals("buyer")) flag = true;
+        if(flag){
+            status_0.setTextColor(Color.parseColor("#bdbdbd"));
+            status_1.setTextColor(Color.parseColor("#ffffff"));
+            status_2.setTextColor(Color.parseColor("#bdbdbd"));
+            status_3.setTextColor(Color.parseColor("#bdbdbd"));
+            status_4.setTextColor(Color.parseColor("#bdbdbd"));
+            account.setText("KB 7347562-01-129986");
+        }
 
     }
 
@@ -61,6 +82,7 @@ public class FinalActivity extends AppCompatActivity {
                     status_2.setTextColor(Color.parseColor("#bdbdbd"));
                     status_3.setTextColor(Color.parseColor("#ffffff"));
                     status_4.setTextColor(Color.parseColor("#bdbdbd"));
+                    if(flag) password.setText("AxK12Uz");
                     break;
                 case 4 :
                     status_0.setTextColor(Color.parseColor("#bdbdbd"));

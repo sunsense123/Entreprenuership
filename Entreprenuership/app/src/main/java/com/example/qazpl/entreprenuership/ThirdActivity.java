@@ -101,6 +101,7 @@ public class ThirdActivity extends AppCompatActivity {
 
             Intent intent = new Intent(ThirdActivity.this,FinalActivity.class);
       //    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent.putExtra("person","seller");
             startActivity(intent);
             overridePendingTransition(R.anim.in_from_right,R.anim.out_to_left);
             finish();
