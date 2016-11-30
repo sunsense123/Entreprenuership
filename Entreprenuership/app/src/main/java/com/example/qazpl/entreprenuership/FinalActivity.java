@@ -9,9 +9,9 @@ public class FinalActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_deal);
 
-        Intent mintent = new Intent(FinalActivity.this,FinalActivity.class);
-        startActivity(mintent);
+        //Intent mintent = new Intent(FinalActivity.this,FinalActivity.class);
+        //startActivity(mintent);
     }
 }

@@ -68,6 +68,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp">
         <EditText
+            android:background="@null"
             android:textSize="15dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"

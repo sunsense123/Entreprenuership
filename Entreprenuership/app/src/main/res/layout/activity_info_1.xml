@@ -49,10 +49,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <EditText
+                android:background="@null"
                 android:id="@+id/edt_name"
                 android:gravity="center"
                 android:textSize="15dp"
-                android:text="@string/edt_1"
+                android:hint="@string/edt_1"
                 android:textColorHint="#ffffff"
                 android:layout_width="300dp"
                 android:layout_height="50dp" />
@@ -65,8 +66,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <EditText
+                android:background="@null"
                 android:id="@+id/edt_phone"
-                android:text="@string/edt_2"
+                android:hint="@string/edt_2"
                 android:gravity="center"
                 android:textSize="15dp"
                 android:textColorHint="#ffffff"
