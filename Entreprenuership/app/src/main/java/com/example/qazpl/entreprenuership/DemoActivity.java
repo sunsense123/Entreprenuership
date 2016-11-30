@@ -33,7 +33,7 @@ public class DemoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(DemoActivity.this, "Processing : IN", Toast.LENGTH_LONG).show();
-                new HttpPostRequest().execute("3", "01029994263");
+                new HttpPostRequest().execute("3", "010-2999-4263");
             }
         });
 
@@ -41,7 +41,7 @@ public class DemoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(DemoActivity.this, "Processing : DEPOSIT", Toast.LENGTH_LONG).show();
-                new HttpPostRequest().execute("4", "01029994263");
+                new HttpPostRequest().execute("4", "010-2999-4263");
 
             }
         });
@@ -50,7 +50,7 @@ public class DemoActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(DemoActivity.this, "Processing : OUT", Toast.LENGTH_LONG).show();
-                new HttpPostRequest().execute("5", "01029994263");
+                new HttpPostRequest().execute("5", "010-2999-4263");
 
             }
         });

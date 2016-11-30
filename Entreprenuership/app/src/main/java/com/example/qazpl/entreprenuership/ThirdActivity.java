@@ -51,8 +51,7 @@ public class ThirdActivity extends AppCompatActivity {
 
 
                 new HttpPostRequest().execute("1", phone, name, price, token);
-                Intent mintent = new Intent(ThirdActivity.this, FinalActivity.class);
-                startActivity(mintent);
+
 
             }
         });
